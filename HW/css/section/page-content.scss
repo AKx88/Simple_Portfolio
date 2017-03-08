@@ -1,0 +1,107 @@
+.maincontent{
+    .container{
+        @extend %clearfix;
+    }
+}
+.sidebar{
+    float: left;
+    width: 220px;
+}
+.nav__link{
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    @include fira(bold);
+    padding: 10px 0;
+    min-height: 42px; 
+    text-align: right;
+    border-right: 5px solid transparent;
+    color: $black;
+    &:hover{        
+        color: $blue;
+    }
+    &:active{
+        border-right: 5px solid $blue;
+    }
+    }
+.nav__link-text{
+    display: inline-block;
+    padding: 4px 30px 4px 20px;
+}
+//.nav__link li a{
+//    vertical-align: middle;
+//}
+.page-content{
+    float: right;
+    width: 700px;
+}
+.about__pic{
+    overflow: hidden;
+    boerder: 5px solid #fff;
+    display: inline-block;    
+    border-radius: 50%;
+}
+.about__pic img{
+    display:block;
+    max-width: 220px;
+    max-height: 220px;
+}
+.about__left{  
+    float: left;     
+    @extent %clearfix;
+    width: 300px; 
+    margin-right: 1px;
+    text-align: center;
+} 
+.about__right{
+    float: right;
+    @extent %clearfix;
+    width: 380px; 
+}
+.title{
+    font-size: 35px;
+    @include fira(bold);
+    color: $black;
+    text-align: left;
+    margin-bottom: 20px;
+    
+}
+.about__desc{
+    p{
+    font-size: 18px;
+    color: $text_desc;
+    margin-bottom: 20px;         
+    }
+    @include fira(light);
+    overflow-y: hidden;
+    
+    &:hover{
+         overflow-y: scroll;
+    }
+    height: 290px;
+    margin-bottom: 55px;
+    
+}
+.about__btns{
+    text-align: right;
+}
+.btn{
+    width: 169px;
+    height: 42px;
+    border: 3px solid $red;
+    border-radius: 19px;
+    background: $white;    
+        &:hover{
+            background: $red;
+            .btn__desc{
+            color: $white;                
+            }
+    }
+    .btn__desc{
+    color: $red;
+    font-size: 14px;
+    @include fira(bold);
+    text-decoration: none;            
+    }
+    transition: all .5s;
+}

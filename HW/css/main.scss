@@ -1,0 +1,19 @@
+        // Vars
+$white: #f6f6f6;
+$blue: #33c1e3;
+$text_desc: #727272;
+$black: #414141;
+$red: #e85f61;
+
+        // Layout
+
+@import "_misc/fonts"; 
+@import "_misc/mixins";
+@import "_misc/normalize";
+@import "_misc/adjustment";
+@import "plagins/font-awesome/font-awesome";
+
+        // Styles
+@import "section/header";
+@import "section/footer";
+@import "section/page-content";

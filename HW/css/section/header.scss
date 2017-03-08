@@ -1,0 +1,48 @@
+.header{
+    background: #fff;    
+    @include box-shadow(0 1px 3px 0 rgba(#000, .2));
+    @extend %clearfix;
+    @include fira(bold);
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.header__left, .header__right{
+    float: left;
+    width: 50%;
+    min-height: 60px;
+}
+.header__right{
+    text-align: right;
+}
+.contacts__link{
+    color: $blue;
+    @include fira(bold);
+    text-decoration: none;
+    font-size: 18px;
+//    border-bottom: 1px dotted $blue;
+    background: url('/img/decor/dot.png') 0 bottom repeat-x;
+    &:hover{
+        
+    }
+    }
+.contacts{
+    @extend %clearfix; 
+    margin: 12px auto;
+}
+.user__avatar {
+   @include inlineblock(middle);
+    width: 60px;
+    height: 60px;
+}
+
+.user__name{
+    @include inlineblock(middle);
+    font-size: 18px;
+    margin-left: 20px;
+    color: $black;
+    @include fira(bold);
+    &:hover{
+        color: $blue;
+    }
+}
+
