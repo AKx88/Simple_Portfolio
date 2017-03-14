@@ -28,21 +28,29 @@
 		<div class="maincontent">
 			<header class="header">
 				<div class="container">	
-				    <a href="index.html" class="header__left">
+				    <div class="header__left">
 				        <div class="user">
                             <div class="user__avatar">
-                                <img src="/img/ava.png">
+                                <a href="index.html">
+                                   <img src="img/ava.png"></a>
                             </div>
-                            <div class="user__name">Алексей Копасов</div>
+                            <a href="index.html">
+                                <div class="user__name">Алексей Копасов</div>
 				         </div>
-				    </a>			
+                            </a>
+                            
+				    </div>			
 				    <div class="header__right">
 				        <div class="contacts">
-				            <a href="#" class="contacts__link">Мои контакты</a>
 				            <ul class="contacts__dropdown">
-				                <li class="contacts__dropdown-item"></li>
-				                <li class="contacts__dropdown-item"></li>
-				                <li class="contacts__dropdown-item"></li>
+                                <li><a href="#" class="contacts__link">Мои контакты</a>
+                                       <ul class="contacts__dropdown-items">
+                                           <div class="triangle"></div>
+                                               <li class="contacts__dropdown-item"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;  alesey.k1@gmail.com</li>
+                                                <li class="contacts__dropdown-item"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; +7 911 704 21 47</li>
+                                                <li class="contacts__dropdown-item"><i class="fa fa-skype" aria-hidden="true"></i>&nbsp; scape</li>
+                                        </ul>	
+                                </li>			                    
 				            </ul>
 				        </div>
 				    </div>
@@ -65,7 +73,7 @@
                        <div class="about">
                            <div class="about__left">
                                <div class="about__pic">
-                                   <img src="/img/content/main-ava.png">
+                                   <img src="img/content/main-ava.png">
                                </div>
                            </div>
                            <div class="about__right">
@@ -97,17 +105,24 @@
                 </div>
             </div>
             <div class="footer__right">
+                <div class="social__link">
+                    <div onclick="location.href='http://www.vk.com'" class="social__link social__link-iconvk"></div>
+                    <div onclick="location.href='http://www.facebook.com'" class="social__link social__link-iconfb"></div>
+                    <div onclick="location.href='http://www.twitter.com'" class="social__link social__link-icontw"></div>
+                </div>
+<!--
                 <ul class="social">
                     <li class="social__item">
-                        <a href="#" class="social__link social__link_fb"></a>
+                        <a href="#" class="social__link social__link-iconfb"></a>
                     </li>
                     <li class="social__item">
-                        <a href="#" class="social__link social__link_vk"></a>
+                        <a href="#" class="social__link social__link-iconvk"></a>
                     </li>
                     <li class="social__item">
-                        <a href="#" class="social__link social__link_tw"></a>
+                        <a href="#" class="social__link ssocial__link-icontw"></a>
                     </li>
                 </ul>
+-->
             </div>
 		</div>
 	</footer>

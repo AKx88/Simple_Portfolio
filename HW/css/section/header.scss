@@ -14,20 +14,75 @@
 .header__right{
     text-align: right;
 }
+.contacts{
+    @extend %clearfix; 
+    margin: 12px auto;    
+    &:hover{
+         .contacts__dropdown-items{
+            opacity: 1;
+            transition: opacity .5s
+        }
+        .contacts__link{
+            background: url('../img/decor/dot_hover.png') 0 bottom repeat-x; 
+        color: $red;
+        }
+}
+}
+.triangle{
+    position: absolute;
+    background: #fff;
+    top: -9px;
+    right: 50%;
+    margin-right: -8px;
+    width: 15px;
+    height: 15px;
+    border-bottom: 1px solid #5a5a5a;
+    border-right: 1px solid #5a5a5a;
+    transform: rotate(225deg);
+}
+.contacts__dropdown{
+    position: relative;
+}
 .contacts__link{
     color: $blue;
     @include fira(bold);
     text-decoration: none;
     font-size: 18px;
-//    border-bottom: 1px dotted $blue;
-    background: url('/img/decor/dot.png') 0 bottom repeat-x;
-    &:hover{
+    background: url('../img/decor/dot.png') 0 bottom repeat-x;
+    }
         
+    
+.contacts__dropdown-items{
+    position: absolute; 
+    display: block;
+    top: 40px;
+    right: -65px;
+    border: 1px solid #5a5a5a;
+    border-radius: 12px;
+    background: #fff;
+    opacity: 0;
+        
+        &:before{
+            display: block;
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 25px;
+            top: -23px;
+            }
+}
+.contacts__dropdown-item{
+    padding: 12px;
+    @include fira(light);
+    font-size: 18px;
+    border-bottom: 1px solid #5a5a5a;
+    text-align: left;
+    vertical-align: middle;
+    & .fa{
+        color: $blue;
     }
-    }
-.contacts{
-    @extend %clearfix; 
-    margin: 12px auto;
+   
 }
 .user__avatar {
    @include inlineblock(middle);
@@ -41,8 +96,10 @@
     margin-left: 20px;
     color: $black;
     @include fira(bold);
+    transition: 0.2s all;
     &:hover{
         color: $blue;
     }
-}
+    }
+
 

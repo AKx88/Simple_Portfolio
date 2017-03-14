@@ -17,6 +17,7 @@
     text-align: right;
     border-right: 5px solid transparent;
     color: $black;
+    transition: 0.2s all;
     &:hover{        
         color: $blue;
     }
@@ -70,7 +71,7 @@
     p{
     font-size: 18px;
     color: $text_desc;
-    margin-bottom: 20px;         
+    margin-bottom: 20px;          
     }
     @include fira(light);
     overflow-y: hidden;
@@ -78,7 +79,7 @@
     &:hover{
          overflow-y: scroll;
     }
-    height: 290px;
+    height: 280px;
     margin-bottom: 55px;
     
 }
